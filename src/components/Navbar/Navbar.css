@@ -1,0 +1,33 @@
+.NavBarItem {
+    background: red;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 20px;
+    list-style: none;
+    text-align: center;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 7rem;
+
+}
+
+.nav-link {
+color: blue;
+padding: .5rem, 1rem;
+}
+
+.menuIcons {
+    display: none;
+}
+
+
+
