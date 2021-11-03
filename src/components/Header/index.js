@@ -1,5 +1,5 @@
 import React, {Component} from ("react");
-import { Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import About from '../About';
 import Navbar from '../Navbar';
 import Contact from '../Contact';
@@ -11,21 +11,24 @@ import Portfolio from '../Resume';
 class Header extends Component {
     render() {
         return (
-            <hashRouter>
+            <BrowserRouter>
+            <Switch>
             <header>
                 <Navbar/>
-            </header>
+           
 
         <div className="portfolio-content">
-            <Route exact path="/" render={() => <Switch to="/About"/>}/>
+            <Route component={About} path="/" exact/>
             <Route path="/About" component={About}/>
-            <Route path="/Contact-me" component={Contact}/>
+            <Route path="/Contact" component={Contact}/>
             <Route path="/Resume" component={Resume}/>
             <Route path="/Portfolio" component={Portfolio}/>
 
             
         </div>
-        </hashRouter>
+        </header>
+        </Switch>
+        </BrowserRouter>
         )
     }
 }
