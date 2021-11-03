@@ -8,15 +8,15 @@ function Footer() {
 <ul className="icon-styles">
 <li className="icon">
 
-<a href="https://www.linkedin.com/in/conner-cochrane-5a42a8211/" alt="linkedn"> <i class="fab fa-linkedin-in"></i></a> 
+<a href="https://www.linkedin.com/in/conner-cochrane-5a42a8211/" alt="linkedn"> <i className="fab fa-linkedin-in"></i></a> 
 </li>
 <li className="icon">
 
-<a href="https://github.com/connerc11" alt="github"> <i class="fab fa-github"></i></a>
+<a href="https://github.com/connerc11" alt="github"> <i className="fab fa-github"></i></a>
 </li>
 <li className="icon">
 
-<a href={PDF} alt="resume"> <i class="far fa-file"></i></a>
+<a href={PDF} alt="resume"> <i className="far fa-file"></i></a>
 </li>
 </ul>
         
