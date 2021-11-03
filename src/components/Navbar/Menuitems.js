@@ -1,23 +1,23 @@
 export const MenuItems= [
     {
         header: "About Me",
-        url: "#",
+        url: "/About",
         class: "nav-link"
     },
     {
         header: "Portfolio",
-        url: "",
+        url: "/Portfolio",
         class: "nav-link"
 
     },
     {
         header: "Contact Me",
-        url: "",
+        url: "/Contact-me",
         class: "nav-link",
     },
     {
         header: "Resume",
-        url: "",
+        url: "/Resume",
         class: "nav-link",
     }
 ]

@@ -1,8 +1,9 @@
 import React from 'react';
 // import logo from './logo.svg';
-import Navbar from './components/Navbar/Navbar';
+import Navbar from './components/Navbar/Nav';
 import About from './components/About';
 import './App.css';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <main>
         <About></About>
       </main>
+      <Footer></Footer>
     </div>
   );
 }

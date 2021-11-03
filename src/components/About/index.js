@@ -5,7 +5,6 @@ function About() {
     return (
         <section className="my-5">
           <div className="profile-container">
-        <h1 id="intro">Conner Cochrane's Portfolio</h1>
         <div className="image">
         <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" />
         </div>

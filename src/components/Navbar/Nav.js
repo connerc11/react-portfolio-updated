@@ -1,10 +1,9 @@
 
 import React, { Component } from 'react'; 
 import { MenuItems } from './Menuitems';
-// import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
-import './Navbar.css'
+import './Nav.css'
 
-class Navbar extends Component {
+class Nav extends Component {
     state = {touched: false}
     
     
@@ -32,4 +31,4 @@ class Navbar extends Component {
 
 }
  
-export default Navbar;
+export default Nav;
