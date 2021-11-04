@@ -1,27 +1,34 @@
-import React from 'react';
-// import { BrowserRouter, Route, Switch } from "react-router-dom"
-import Navbar from './components/Navbar/Nav';
-import About from './components/About';
-import './App.css';
-import Footer from './components/Footer';
-import Resume from './components/Resume';
-import ContactForm from './components/Contact';
+import React from "react";
+
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import About from "./components/About";
+
+import Contact from "./components/Contact";
+import Resume from "./components/Resume";
+import Portfolio from "./components/Portfolio";
+import Navbar from "./components/Navbar";
+// import "./App.css";
+
 
 function App() {
   return (
-  
     <div className="app">
-      <Navbar></Navbar>
-      <main>
-        <About></About>
-        <Resume></Resume>
-      </main>
-      <>
-      <ContactForm></ContactForm>
-      </>
-      <Footer></Footer>
-    </div>
+      <BrowserRouter>
+        <Switch>
+          <header>
+            <Navbar />
 
+            <div className="portfolio-content">
+              <Route component={About} path="/" exact />
+              <Route path="/About" component={About} />
+              <Route path="/Contact" component={Contact} />
+              <Route path="/Resume" component={Resume} />
+              <Route path="/Portfolio" component={Portfolio} />
+            </div>
+          </header>
+        </Switch>
+      </BrowserRouter>
+    </div>
   );
 }
 
