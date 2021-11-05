@@ -1,12 +1,13 @@
 import React from "react";
 
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import About from "./components/About";
 
 import Contact from "./components/Contact";
 import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 // import "./App.css";
 
 
@@ -14,7 +15,7 @@ function App() {
   return (
     <div className="app">
       <BrowserRouter>
-        <Switch>
+        {/* <Switch> */}
           <header>
             <Navbar />
 
@@ -26,8 +27,9 @@ function App() {
               <Route path="/Portfolio" component={Portfolio} />
             </div>
           </header>
-        </Switch>
+        {/* </Switch> */}
       </BrowserRouter>
+      <Footer></Footer>
     </div>
   );
 }
