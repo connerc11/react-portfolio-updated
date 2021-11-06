@@ -13,7 +13,7 @@ function ContactForm() {
     
 
 
-const changeHandle = (e) => {
+function changeHandle(e){
     if (e.target.name === 'email'){
         const isValid = validateEmail(e.target.value);
         if (!isValid) {
@@ -21,18 +21,23 @@ const changeHandle = (e) => {
          
       } else {
         if (!e.target.value.length) {
+          console.log('not proper');
           setErrorMessage(`${e.target.name} is required.`);
         } else {
           setErrorMessage('');
         }
       }
-    };
+    }
+    if(!errorMessage) {
+      setFormState({...formState, [e.target.name]: e.target.value});
+    }
+      
 }
 
-const submitHandle = (e) => {
+function submitHandle(e){
     e.preventDefault();
     if (!errorMessage) {
-      setFormState({ [e.target.name]: e.target.value });
+      // setFormState({ [e.target.name]: e.target.value });
     //   console.log('Form', formState);
     }
   };
@@ -43,18 +48,18 @@ return (
             <p>Email: cccochrane1@knights.ucf.edu</p>
             <p>Phone: 954-918-3334</p>
 
-        <form id="contact-form" onSubmit={submitHandle}>
+        <form id="contact-form" onChange={submitHandle}>
         <div>
             <label htmlFor="name"> Enter Your Name:</label>
-            <input type="text" onBlur={changeHandle} name="name" defaultValue={name} ></input>
+            <input type="text" onChange={changeHandle} defaultValue={name} name="name" ></input>
         </div>
         <div>
             <label htmlFor="email"> Enter Your Email:</label>
-            <input type="email" onBlur={changeHandle} name="email" defaultValue={email} ></input>
+            <input type="email" onChange={changeHandle} defaultValue={email} name="email" ></input>
         </div>
         <div>
             <label htmlFor="message"> Please leave a message:</label>
-            <textarea name="message" onBlur={changeHandle} rows="8" defaultValue={message}/>
+            <textarea name="message" onChange={changeHandle} rows="8" defaultValue={message}/>
         </div>
 
         {errorMessage && (

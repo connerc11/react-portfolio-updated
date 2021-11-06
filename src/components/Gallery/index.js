@@ -1,5 +1,5 @@
 import React from "react";
-// import Card from "react-bootstrap/Card"
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Carousel from 'react-bootstrap/Carousel'
@@ -13,7 +13,7 @@ function Project() {
         {   
             id: 1,
             img: pic1,
-            infomation: "App to play trivia and drink casually with friends",
+            information: "App to play trivia and drink casually with friends",
             link: "https://github.com/connerc11/Trivia-Brews-Project1",
             title: "Trivia Brews",
             github: "https://github.com/connerc11/Trivia-Brews-Project1",
@@ -31,8 +31,8 @@ function Project() {
         {
             id: 3,
             img: pic3,
-            information: "Original Portfolio",
-            link: "https://github.com/connerc11/Conner-Cochrane-Portfolio",
+            information: "This was my beginning portfolio created with just CSS and HTML",
+            link: "https://connerc11.github.io/Conner-Cochrane-Portfolio/",
             title: "Conner Cochranes Portfolio",
             github: "https://github.com/connerc11/Conner-Cochrane-Portfolio",
            
@@ -40,10 +40,10 @@ function Project() {
         {
             id: 4,
             img: pic4,
-            information: "Place to track and learn about employees",
-            link: "https://github.com/connerc11/Employee-Tracker",
-            title: "Employee Tracker ",
-            github: "https://github.com/connerc11/Employee-Tracker",
+            information: "App to create notes to remind yourself about what you have to do!",
+            link: "https://note-taker1001.herokuapp.com/",
+            title: "Note Taker ",
+            github: "https://github.com/connerc11/Note-Taker",
            
         }
         
@@ -56,7 +56,7 @@ function Project() {
         <div className="carousel-container">
         {/* <iframe src="http://localhost:3002" title="title" className="d-block w-100" width="400" height="800"/> */}
 
-            <Carousel>
+            <Carousel variant="dark">
                 {/* <Carousel.Item> */}
                 {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/NO7_jgzVgbc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
                         {/* <iframe src="http://localhost:3002" title="title" className="d-block w-100" width="400" height="1400"/> */}
@@ -69,7 +69,7 @@ function Project() {
                         src={data.img}
                         alt={data.information} />
                         <Carousel.Caption>
-                            {data.title} : <span>{data.infomation}</span>
+                            {data.title} : <span>{data.information}</span>
 
                         </Carousel.Caption>
                     </a>

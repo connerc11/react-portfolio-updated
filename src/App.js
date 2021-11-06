@@ -8,10 +8,12 @@ import Resume from "./components/Resume";
 import Portfolio from "./components/Portfolio";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Home from "./components/Home";
 // import "./App.css";
 
 
 function App() {
+  // const [contactSelected, setContactSelected] = useState(false);
   return (
     <div className="app">
       <BrowserRouter>
@@ -20,7 +22,8 @@ function App() {
             <Navbar />
 
             <div className="portfolio-content">
-              <Route component={About} path="/" exact />
+              <Route component={Home} path="/" exact />
+              <Route path="/Home" component={Home}/>
               <Route path="/About" component={About} />
               <Route path="/Contact" component={Contact} />
               <Route path="/Resume" component={Resume} />
