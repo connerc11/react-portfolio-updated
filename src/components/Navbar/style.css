@@ -29,6 +29,13 @@ padding: .5rem, 1rem;
     display: none;
 }
 
+.navLogo{
+    color: rgb(18, 18, 87);
+    margin: 5px;
+    width: auto;
+
+}
+
 /* h1 {
     margin-left: 5px;
 } */

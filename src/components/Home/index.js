@@ -12,7 +12,7 @@ function Home () {
             <br></br>
             <br></br>
             <br></br>
-            <h3>Hello! I am Conner and I am a Software Developer! Click the tabs up top to see more information!</h3>
+            <h3>Hello! My name is Conner and I am a Software Developer! Click the tabs up top to see more information!</h3>
             <br></br>
             <br></br>
             <br></br>
