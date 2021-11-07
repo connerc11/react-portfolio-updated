@@ -18,7 +18,7 @@ import Project from "../Gallery";
 function Portfolio () {
     return(
     <section id="portfolio">
-        <h1>My portfolio</h1>
+        <h1 className="text-center">My portfolio</h1>
         <Project/>
     </section>
     )

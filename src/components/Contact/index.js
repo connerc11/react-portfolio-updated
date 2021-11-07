@@ -50,7 +50,7 @@ return (
             <p className="text-center" style={{color: "blue"}}>Phone: 954-918-3334</p>
 
         <form id="contact-form" onChange={submitHandle}>
-        <div className="field11" >
+        <div className="field" >
             <label htmlFor="name" style={{color: "royalblue"}}> Enter Your Name:</label>
             <input placeholder="Name here!"type="text" onChange={changeHandle} defaultValue={name} name="name" ></input>
         </div>

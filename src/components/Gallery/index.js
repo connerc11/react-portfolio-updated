@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./gallery.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Carousel from 'react-bootstrap/Carousel'
@@ -33,7 +33,7 @@ function Project() {
             img: pic3,
             information: "This was my beginning portfolio created with just CSS and HTML",
             link: "https://connerc11.github.io/Conner-Cochrane-Portfolio/",
-            title: "Conner Cochranes Portfolio",
+            title: "Conner's Portfolio",
             github: "https://github.com/connerc11/Conner-Cochrane-Portfolio",
            
         },
@@ -69,7 +69,10 @@ function Project() {
                         src={data.img}
                         alt={data.information} />
                         <Carousel.Caption>
-                            {data.title} : <span>{data.information}</span>
+                            {data.title} : 
+                            <br></br>
+                            <br></br>
+                            <span>{data.information}</span>
 
                         </Carousel.Caption>
                     </a>
@@ -79,8 +82,13 @@ function Project() {
             ))} 
             
         </Carousel>
+
+    
         </div>
+
+        
     </div>
+    
 
 
         
